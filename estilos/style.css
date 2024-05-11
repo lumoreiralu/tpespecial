@@ -1,4 +1,6 @@
-#fondo{
-    background-image: url(//imagenes/hamburguesa.jpeg);
-
+body{
+    margin: 0;
+    background-image: url(../imagenes/fondo1.jpg);
+    background-repeat:repeat-y;
+    background-size: cover;
 }
