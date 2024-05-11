@@ -5,9 +5,18 @@ body{
     background-size: cover;
 }
 #encabezado{
-    background-color: bisque;
+    background-color: gray;
     display: flex;
     margin: 0;
-    border: 2px;
-    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+#logoencabezado{
+    height: 40px;
+    width: auto;
+}
+#nombreencabezado{
+    margin-right: 20px;
+    font-size: 20px;
+    font-style: inherit;
 }
