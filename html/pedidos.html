@@ -8,27 +8,23 @@
 </head>
 <body>
     <header> 
-        <div id="encabezado">
-            
-            <div>
-                <p id="nombreencabezado">BurguerQueen</p>
-            </div>
-             <ul id="barra-navegacion">
-                <a href="../index.html"> 
-                    <li class="boton">Inicio</li>
+        <p id="nombreencabezado">BurguerQueen</p>
+        <button class="abrir-menu" id="abrir" ><img id="logo" src="../imagenes/logo1.jpeg" alt=""></button>
+        <nav class="nav" id="nav"> 
+            <button class="cerrar-menu" id="cerrar"><img id="logo" src=".. /imagenes/logo1.jpeg" alt=""></button>
+            <ul id="nav-list">
+                <li class="boton">Inicio</li>
+                <a href="./html/menu.html">
+                    <li class="boton" >Menu</li>
                 </a>
-                <a href="./menu.html"> 
-                    <li class="boton">Menu</li>
+                <a href="./html/pedidos.html">
+                    <li class="boton">Pedidos</li>
                 </a>
-                     <li class="boton">Pedidos</li>
-                <a href="./locales.html">
-                    <li class="boton">Sucursales</li>   
-                 </a>
-            
-        </div>
-       
-
-        </ul>
+                <a href="./html/locales.html">
+                     <li class="boton">Sucursales</li>
+                </a>
+                </ul>
+        </nav>
     </header>
     
     <nav> 
@@ -40,5 +36,6 @@
     <footer> 
 
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
