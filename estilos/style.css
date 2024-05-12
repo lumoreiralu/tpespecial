@@ -38,7 +38,10 @@ header{
 .boton{
     text-decoration: none;
     color: rgb(230, 100, 7);
-
+}
+a{
+    text-decoration: none;
+    color: none;
 }
 .abrir-menu{
     display:block ;
@@ -78,7 +81,32 @@ header{
     .cerrar-menu{
         display: none;
     }
-    #nav{
+    #nav-list{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+    .boton{
+        list-style: none;
+        margin: 0px 10px;
+        color:darkorange;
+        text-transform: uppercase;
+        padding: 15px;
+        text-decoration: none;
+    }
+    .boton:hover{
+        background: #983351;
+    }
+}
+.menu-fotos{
+    display: flex;
+}
+
+.fotomenu{
+    height: 150px;
+    width: 170px;
+    border-style:groove;
+    border-color: rgb(242, 138, 3);
+    padding-top: auto;
+    
 }
