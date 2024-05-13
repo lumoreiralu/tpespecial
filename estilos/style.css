@@ -73,31 +73,6 @@ a{
 }
 
 
-
-@media only screen and (min-width: 768px){
-    .abrir-menu{
-        display: none;
-    }
-    .cerrar-menu{
-        display: none;
-    }
-    #nav-list{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .boton{
-        list-style: none;
-        margin: 0px 10px;
-        color:darkorange;
-        text-transform: uppercase;
-        padding: 15px;
-        text-decoration: none;
-    }
-    .boton:hover{
-        background: #983351;
-    }
-}
 .menu-fotos{
     display: flex;
 }
@@ -109,4 +84,40 @@ a{
     border-color: rgb(242, 138, 3);
     padding-top: auto;
     
+}
+@media only screen and (min-width: 769px) {
+    .abrir-menu {
+        display: none;
+    }
+    .cerrar-menu {
+        display: none;
+    }
+    .nav {
+        display: flex; /* Hace que la navegación sea visible en pantallas grandes */
+        position: relative; /* Restaura la posición a estática */
+        opacity: 2; /* Restaura la opacidad */
+        visibility: visible; /* Restaura la visibilidad */
+        box-shadow: none; /* Elimina la sombra */
+    }
+    #nav-list {
+        display: ruby;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+    }
+    .boton {
+        list-style: none;
+        margin: 0px 10px;
+        color: darkorange;
+        text-transform: uppercase;
+        padding: 40px;
+        text-decoration: none;
+    }
+    .boton:hover {
+        background: #e6c20f;
+        margin: 10px;
+    }
+    header{
+        padding: 2px;
+    }
 }
