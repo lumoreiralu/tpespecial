@@ -15,6 +15,7 @@ header{
     justify-content: space-between;
     padding: 16px;
     background-color: #020202;
+    z-index: 100;
 }
 #nombreencabezado{
     margin-right: 20px;
@@ -92,6 +93,10 @@ a{
     border-radius: 40px;
     border-style: outset;
 }
+.marquesina{
+    width: 100%;
+    overflow: hidden;
+  }
 .titulo-ofertas{
     background-color: rgb(232, 228, 7);
     text-align: center;
@@ -99,7 +104,12 @@ a{
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 3px 3px 0 rgb(133, 104, 49);
+    animation: marquee 10s linear infinite;
 }
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
 
 .lista-ofertas{
     color: rgb(212, 179, 12);
@@ -114,6 +124,7 @@ a{
 }
 #promo2{
     display: flex;
+    flex-direction: row;
 }
 #promo3{
     display: flex;
@@ -121,6 +132,91 @@ a{
 .titulopromo{
     text-transform: uppercase;
     color: #e4a14a;
+}
+.Titulos-hb {
+    text-transform: uppercase;
+    color: #e4a14a;
+}
+
+.titulo-menu {
+    background-color: rgb(232, 228, 7);
+    text-align: center;
+    color: #e4a14a;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 3px 3px 0 rgb(133, 104, 49)
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: left;
+    color: #e4a14a;
+   
+    
+}
+.izquierda {
+    background-color: black;
+    margin: 5px;
+    width: 200px;
+ 
+}
+.centro {
+    background-color: black;
+    margin: 5px;
+    width: 200px;
+}
+
+.derecha {
+    background-color: black;
+    margin: 5px;
+    width: 200px;
+}
+.hb {
+    height: 200px;
+    width: 200px;
+}
+
+.lista-de-ingredientes {
+    color: yellow;
+}
+
+.sub {
+    text-transform: uppercase;
+}
+
+
+
+.map{
+    height: 250px;
+    width: 250px;
+}
+
+.sucursales {
+    color: #e4a14a;
+    padding: 10px;
+    margin: 20px;
+    content: 0px;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.titulo-sucursal {
+    background-color: rgb(232, 228, 7);
+    text-align: center;
+    color: #e4a14a;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 3px 3px 0 rgb(133, 104, 49)
+}
+thead {
+    color: yellow;
+    text-transform: uppercase;
+}
+table, td, tr {
+    border: 1px solid yellow;
+    border-collapse: collapse;
 }
 @media only screen and (min-width: 769px) {
     .abrir-menu {
