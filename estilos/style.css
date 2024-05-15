@@ -106,6 +106,54 @@ a{
     text-shadow: 3px 3px 0 rgb(133, 104, 49);
     animation: marquee 10s linear infinite;
 }
+.container{
+    background-color: #eda548;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+#botonform {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#botonform:hover {
+    background-color: #0056b3;
+}
+
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
@@ -189,8 +237,10 @@ a{
 
 
 .map{
-    height: 250px;
-    width: 250px;
+    height: 170px;
+    width: 170px;
+    border-style: solid;
+    border-color: #e6c20f;
 }
 
 .sucursales {
@@ -217,6 +267,20 @@ thead {
 table, td, tr {
     border: 1px solid yellow;
     border-collapse: collapse;
+}
+.mapasarriba{
+    display: flexbox;
+}
+.mapasabajo{
+    display: flexbox;
+}
+#map2arriba{
+    margin-left: 45px;
+    margin-top: 50px;
+}
+#map2abajo{
+    margin-left: 45px;
+    margin-top: 50px;
 }
 @media only screen and (min-width: 769px) {
     .abrir-menu {

@@ -13,7 +13,6 @@
         <nav class="nav" id="nav"> 
             <button class="cerrar-menu" id="cerrar"><img id="logo" src=".. /imagenes/logo1.jpeg" alt=""></button>
             <ul id="nav-list">
-                
                 <li><a href="../index.html" class="boton">Inicio</a></li>
                 <li><a href="menu.html" class="boton">Menu</a></li>
                 <li><a href="pedidos.html" class="boton"> Pedidos</a></li>
@@ -21,12 +20,39 @@
             </ul>
         </nav>
     </header>
-    
+    <div class="titulo-ofertas">
+        <div>Realiza tu pedido</div>
+    </div>
     <nav> 
     
     </nav>
     <section>
-    
+        <div class="container">
+             <form action="login.php">
+                <input type="text" name="username" placeholder="Nombre">
+                <input type="password" name="password" placeholder="Contrasenia">               
+                <label for="">
+                <input type="checkbox" name="hamburguesa queen">HamburguesaQueen
+                </label>
+                <label for="">
+                <input type="checkbox" name="hamburguesa simple">HamburguesaSimple
+                </label>
+                <label for="">
+                <input type="checkbox" name="hamburguesa king">HamburguesaKing
+                </label>
+                <label for="">
+                <input type="checkbox" name="promo 1">Promo 1
+                </label>
+                <label for="">
+                <input type="checkbox" name="promo 2">Promo 2
+                </label>
+                <label for="">
+                <input type="checkbox" name="promo 3">Promo 3
+                </label>
+                <textarea name="comentarios" ></textarea>
+                <button id="botonform" type="submit" >Sign in</button>
+             </form>
+         </div>
     </section>
     <footer> 
 
