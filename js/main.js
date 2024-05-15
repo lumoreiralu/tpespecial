@@ -29,12 +29,13 @@ function verificarCaptcha(event) {
     const respuestaCaptcha = parseInt(document.getElementById('captcha').value);
 
     if (respuestaCaptcha === num1 + num2) {
-        alert('Captcha correcto. Formulario enviado.');
-        document.getElementById('contact-form').submit(); // Enviar el formulario
+        document.querySelector('#msjecaptcha').innerHTML ="Pedido realizado con exito. El delivery pronto estara en su puerta"
     } else {
-        alert('Captcha incorrecto. Inténtalo de nuevo.');
-        generarPreguntaCaptcha(); // Generar una nueva pregunta captcha
+        document.querySelector('#msjecaptcha').innerHTML = "aptcha incorrecto. Vuelva a intentarlo"
     }
 }
 
-window.onload = generarPreguntaCaptcha;
+window.onload = function() {
+    generarPreguntaCaptcha();
+    document.getElementById('botonform').addEventListener('click', verificarCaptcha);
+};
