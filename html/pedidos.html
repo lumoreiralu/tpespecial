@@ -30,7 +30,7 @@
         <div class="container">
              <form action="login.php">
                 <input type="text" name="username" placeholder="Nombre">
-                <input type="password" name="password" placeholder="Contrasenia">               
+                <input type="text" name="direccion" placeholder="Direccion">               
                 <label for="">
                 <input type="checkbox" name="hamburguesa queen">HamburguesaQueen
                 </label>
@@ -49,7 +49,13 @@
                 <label for="">
                 <input type="checkbox" name="promo 3">Promo 3
                 </label>
-                <textarea name="comentarios" ></textarea>
+                Sugerencias.<textarea name="comentarios" ></textarea> 
+                <div class="captcha">
+                    <span id="captcha-question"></span>
+                    <input type="text" id="captcha" name="captcha" required>
+                </div>
+                <input type="hidden" id="num1" name="num1">
+                <input type="hidden" id="num2" name="num2">
                 <button id="botonform" type="submit" >Sign in</button>
              </form>
          </div>

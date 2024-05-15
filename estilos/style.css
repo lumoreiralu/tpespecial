@@ -153,7 +153,10 @@ textarea {
 #botonform:hover {
     background-color: #0056b3;
 }
-
+.captcha {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
