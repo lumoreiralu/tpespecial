@@ -9,6 +9,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+/*comienza barra de navegacion y menu hamburguesa*/
 header{
     display: flex;
     align-items: center;
@@ -32,9 +33,6 @@ header{
    align-items: end;
    background-color: #151313;
    padding: 32px;
-   
-   
-
 }
 .boton{
     text-decoration: none;
@@ -44,11 +42,8 @@ a{
     text-decoration: none;
     color: none;
 }
-.abrir-menu{
+.abrir-menu, .cerrar-menu{
     display:block ;
-}
-.cerrar-menu{
-    display: block;
 }
 .nav{
     position: absolute;
@@ -70,22 +65,22 @@ a{
 #logo{
     width: 30px;
     height: 30px;
-
 }
-
-
+/*termina barra de navegacion-menu hamburgueas*/
+/*comienza menu de promos en index*/
 .menu-fotos{
     display: flex;
 }
-
-.fotomenu{
-    height: 150px;
-    width: 170px;
-    border-style:groove;
-    border-color: rgb(242, 138, 3);
-    padding-top: auto;
-    
+.container2{
+    padding: 55px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: left;
+    color: #e4a14a;
 }
+
 .fotospromos{
     height: 250px;
     width: 250px;
@@ -93,11 +88,8 @@ a{
     border-radius: 40px;
     border-style: outset;
 }
-.marquesina{
-    width: 100%;
-    overflow: hidden;
-  }
-.titulo-ofertas{
+
+.titulo-principal{
     background-color: rgb(232, 228, 7);
     text-align: center;
     color: #e4a14a;
@@ -106,6 +98,52 @@ a{
     text-shadow: 3px 3px 0 rgb(133, 104, 49);
     animation: marquee 10s linear infinite;
 }
+.lista-ofertas{
+    color: rgb(212, 179, 12);
+    background-color: #151313;
+    list-style: none;
+    height: 100px;
+    border-bottom: #e6c20f;
+    border-style: dashed;
+}
+.promo{
+    display: flex;
+}
+.titulopromo{
+    text-transform: uppercase;
+    color: #e4a14a;
+}
+/*termina index*/
+/*comienza html menu*/
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: left;
+    color: #e4a14a;
+}
+.centro, .derecha, .izquierda {
+    background-color: black;
+    margin: 5px;
+    width: 200px;
+}
+.hb {
+    height: 200px;
+    width: 200px;
+}
+.sub {
+    text-transform: uppercase;
+}
+.Titulos-hb{
+    text-transform: uppercase;
+    color:#e4a14a;
+}
+.lista-de-ingredientes {
+    color: yellow;
+}
+/*termina html menu*/
+/*comienza html de pedidos con el form*/
 .container{
     background-color: #eda548;
     padding: 30px;
@@ -118,27 +156,6 @@ a{
 form {
     display: flex;
     flex-direction: column;
-}
-input[type="text"],
-input[type="password"],
-textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: calc(100% - 22px);
-}
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-label {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-textarea {
-    height: 100px;
-    resize: vertical;
 }
 #botonform {
     padding: 10px;
@@ -157,37 +174,25 @@ textarea {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-@keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-  }
-
-.lista-ofertas{
-    color: rgb(212, 179, 12);
-    background-color: #151313;
-    list-style: none;
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px);
     height: 100px;
-    border-bottom: #e6c20f;
-    border-style: dashed;
+    resize: vertical;
 }
-#promo1{
-    display: flex;
-}
-#promo2{
-    display: flex;
-    flex-direction: row;
-}
-#promo3{
-    display: flex;
-}
-.titulopromo{
-    text-transform: uppercase;
-    color: #e4a14a;
-}
-.Titulos-hb {
-    text-transform: uppercase;
-    color: #e4a14a;
-}
+/*termina html de pedidos con el form*/
+
 
 .titulo-menu {
     background-color: rgb(232, 228, 7);
@@ -197,48 +202,8 @@ textarea {
     text-decoration: none;
     text-shadow: 3px 3px 0 rgb(133, 104, 49)
 }
-.contenedor {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: stretch;
-    text-align: left;
-    color: #e4a14a;
-   
-    
-}
-.izquierda {
-    background-color: black;
-    margin: 5px;
-    width: 200px;
- 
-}
-.centro {
-    background-color: black;
-    margin: 5px;
-    width: 200px;
-}
 
-.derecha {
-    background-color: black;
-    margin: 5px;
-    width: 200px;
-}
-.hb {
-    height: 200px;
-    width: 200px;
-}
-
-.lista-de-ingredientes {
-    color: yellow;
-}
-
-.sub {
-    text-transform: uppercase;
-}
-
-
-
+/*comienza-html-sucursales*/
 .map{
     height: 170px;
     width: 170px;
@@ -255,14 +220,6 @@ textarea {
     background-color: black;
 }
 
-.titulo-sucursal {
-    background-color: rgb(232, 228, 7);
-    text-align: center;
-    color: #e4a14a;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-shadow: 3px 3px 0 rgb(133, 104, 49)
-}
 thead {
     color: yellow;
     text-transform: uppercase;
@@ -271,21 +228,18 @@ table, td, tr {
     border: 1px solid yellow;
     border-collapse: collapse;
 }
-.mapasarriba{
+.mapasarriba, .mapasabajo{
     display: flexbox;
 }
-.mapasabajo{
-    display: flexbox;
-}
-#map2arriba{
+
+#map2arriba, #map2abajo{
     margin-left: 45px;
     margin-top: 50px;
 }
-#map2abajo{
-    margin-left: 45px;
-    margin-top: 50px;
-}
+/*termina-html-sucursales*/
+
 @media only screen and (min-width: 769px) {
+   /* media query de la barra de navegacion*/
     .abrir-menu {
         display: none;
     }
@@ -316,5 +270,49 @@ table, td, tr {
     .boton:hover {
         background: #e6c20f;
     }
-
+    /*termina media query de la barra de navegacion*/
+   
+    /*comienza media query del form*/
+   .container{
+        height: 500px;
+        width: 800px;
+    }
+    /*termina media query del form*/
+    /* comienza media query del menu*/
+   
+    /* comienza media query del menu*/
+    /*comienza media query del index.html*/
+    
+    .fotospromos{
+        display: flex;
+        height: 350px;
+        width: 350px;
+        border-color: #e6c20f;
+        border-radius: 40px;
+        border-style: outset;
+    }
+    
+    .lista-ofertas{
+        height: 100px;
+    }
+    .promo{
+        padding: 15px;
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+  
+    /*comienza-media-query-sucursales*/
+  .map{
+        height: 370px;
+        width: 370px;
+        border-style: solid;
+        border-color: #e6c20f;
+    }
+    table{
+        width: 80%; 
+        height: 300px; 
+    }
+    /*termina-media-query-sucursales*/
 }

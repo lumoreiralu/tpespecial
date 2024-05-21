@@ -11,7 +11,7 @@
         <p id="nombreencabezado">BurguerQueen</p>
         <button class="abrir-menu" id="abrir" ><img id="logo" src="../imagenes/logo1.jpeg" alt=""></button>
         <nav class="nav" id="nav"> 
-            <button class="cerrar-menu" id="cerrar"><img id="logo" src=".. /imagenes/logo1.jpeg" alt=""></button>
+            <button class="cerrar-menu" id="cerrar"><img id="logo" src="../imagenes/logo1.jpeg" alt=""></button>
             <ul id="nav-list">
                 <li><a href="../index.html" class="boton">Inicio</a></li>
                 <li><a href="menu.html" class="boton">Menu</a></li>
@@ -20,34 +20,30 @@
             </ul>
         </nav>
     </header>
-    <div class="titulo-ofertas">
-        <div>Realiza tu pedido</div>
-    </div>
-    <nav> 
     
-    </nav>
     <section>
+        <h1 class="titulo-principal">realiza tu pedido</h1>
         <div class="container">
              <form id="pedidoform" action="login.php">
                 <input type="text" name="username" placeholder="Nombre" required>
                 <input type="text" name="direccion" placeholder="Direccion" required>               
-                <label for="">
-                <input type="checkbox" name="hamburguesa queen">HamburguesaQueen
+                <label for="lista-pedido1">
+                <input id="lista-pedido1" type="checkbox" name="hamburguesa queen">HamburguesaQueen
                 </label>
-                <label for="">
-                <input type="checkbox" name="hamburguesa simple">HamburguesaSimple
+                <label for="lista-pedido2">
+                <input id="lista-pedido2" type="checkbox" name="hamburguesa simple">HamburguesaSimple
                 </label>
-                <label for="">
-                <input type="checkbox" name="hamburguesa king">HamburguesaKing
+                <label for="lista-pedido3">
+                <input id="lista-pedido3" type="checkbox" name="hamburguesa king">HamburguesaKing
                 </label>
-                <label for="">
-                <input type="checkbox" name="promo 1">Promo 1
+                <label for="lista-pedido4">
+                <input id="lista-pedido4" type="checkbox" name="promo 1">Promo 1
                 </label>
-                <label for="">
-                <input type="checkbox" name="promo 2">Promo 2
+                <label for="lista-pedido5">
+                <input id="lista-pedido5" type="checkbox" name="promo 2">Promo 2
                 </label>
-                <label for="">
-                <input type="checkbox" name="promo 3">Promo 3
+                <label for="lista-pedido6">
+                <input id="lista-pedido6" type="checkbox" name="promo 3">Promo 3
                 </label>
                 Sugerencias.<textarea name="comentarios" ></textarea> 
                 <div class="captcha">
@@ -56,8 +52,9 @@
                 </div>
                 <input type="hidden" id="num1" name="num1">
                 <input type="hidden" id="num2" name="num2">
-                <button id="botonform" type="" >Realizar Pedido</button>
-                <p id="msjecaptcha">Estado del pedido</p>
+                <button type="button" id="btn-generar-captcha">Generar Captcha</button>
+                <button id="botonform" type="button" >Realizar Pedido</button>
+                <p id="msjecaptcha">Estado del pedido. Pendiente</p>
              </form>
          </div>
     </section>

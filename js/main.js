@@ -3,11 +3,12 @@
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
-
-abrir.addEventListener("click", () =>{
+const generarCaptcha = document.querySelector("#btn-generar-captcha");
+const verificarFormulario = document.querySelector("#botonform");
+abrir.addEventListener("click", function(){
     nav.classList.add("visible");
 })
-cerrar.addEventListener("click", () =>{
+cerrar.addEventListener("click", function(){
     nav.classList.remove("visible");
 })
 //aca termina menu hamgurguesa
@@ -22,8 +23,7 @@ function generarPreguntaCaptcha() {
     document.getElementById('num2').value = num2;
 }
 
-function verificarCaptcha(event) {
-    event.preventDefault(); // Evitar el envío del formulario
+function verificarCaptcha() {
     const num1 = parseInt(document.getElementById('num1').value);
     const num2 = parseInt(document.getElementById('num2').value);
     const respuestaCaptcha = parseInt(document.getElementById('captcha').value);
@@ -31,11 +31,16 @@ function verificarCaptcha(event) {
     if (respuestaCaptcha === num1 + num2) {
         document.querySelector('#msjecaptcha').innerHTML ="Pedido realizado con exito. El delivery pronto estara en su puerta"
     } else {
-        document.querySelector('#msjecaptcha').innerHTML = "aptcha incorrecto. Vuelva a intentarlo"
+        document.querySelector('#msjecaptcha').innerHTML = "Captcha incorrecto. Vuelva a intentarlo"
     }
 }
-
-window.onload = function() {
+verificarFormulario.addEventListener("click", function(){
+    verificarCaptcha();
+    document.querySelector("#captcha").value=" ";
+})
+generarCaptcha.addEventListener("click", function(){
     generarPreguntaCaptcha();
-    document.getElementById('botonform').addEventListener('click', verificarCaptcha);
-};
+    
+})
+//termina captcha
+
