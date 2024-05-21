@@ -8,6 +8,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 /*comienza barra de navegacion y menu hamburguesa*/
 header{
@@ -29,7 +30,7 @@ header{
    display: flex; 
    flex-direction: column;
    list-style-type: none;
-   gap: 16px;
+   gap: 40px;
    align-items: end;
    background-color: #151313;
    padding: 32px;
@@ -82,8 +83,8 @@ a{
 }
 
 .fotospromos{
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
     border-color: #e6c20f;
     border-radius: 40px;
     border-style: outset;
@@ -102,9 +103,11 @@ a{
     color: rgb(212, 179, 12);
     background-color: #151313;
     list-style: none;
+    width: 200px;
     height: 100px;
     border-bottom: #e6c20f;
     border-style: dashed;
+
 }
 .promo{
     display: flex;
@@ -141,6 +144,7 @@ a{
 }
 .lista-de-ingredientes {
     color: yellow;
+    list-style: none;
 }
 /*termina html menu*/
 /*comienza html de pedidos con el form*/
@@ -191,6 +195,9 @@ textarea {
     height: 100px;
     resize: vertical;
 }
+#logoform{
+    display:none
+}
 /*termina html de pedidos con el form*/
 
 
@@ -210,7 +217,7 @@ textarea {
     border-style: solid;
     border-color: #e6c20f;
 }
-
+/*tabla*/
 .sucursales {
     color: #e4a14a;
     padding: 10px;
@@ -227,7 +234,7 @@ thead {
 table, td, tr {
     border: 1px solid yellow;
     border-collapse: collapse;
-}
+}/*tabla*/
 .mapasarriba, .mapasabajo{
     display: flexbox;
 }
@@ -269,27 +276,56 @@ table, td, tr {
     }
     .boton:hover {
         background: #e6c20f;
+
     }
     /*termina media query de la barra de navegacion*/
    
     /*comienza media query del form*/
    .container{
-        height: 500px;
-        width: 800px;
-    }
+    height: 600px;
+    width: 700px;
+    font-size: x-large;
+   }
+   #logoform{
+    display: flex;
+    height: 400px;
+    width: 450px;
+    padding-right: 140px;
+    padding-top: 90px;
+    
+   }
+   .input {
+    width: 400px;
+    height: 30px;
+   }
+   #seccionpedido{
+    display:flex;
+    justify-content: space-between;
+   }
+
     /*termina media query del form*/
     /* comienza media query del menu*/
-   
-    /* comienza media query del menu*/
+    .hb, .izquierda, .centro, .derecha{
+        height: 400px;
+        width: 350px;
+        margin-top: 30px;
+    }
+    .lista-de-ingredientes{
+        background-color: black;
+        list-style: none;
+        font-size: larger;
+    }
+    .sub{
+        font-size: x-large;
+        background-color: #020202;
+    }
+    /* termina media query del menu*/
     /*comienza media query del index.html*/
     
     .fotospromos{
         display: flex;
         height: 350px;
         width: 350px;
-        border-color: #e6c20f;
-        border-radius: 40px;
-        border-style: outset;
     }
     
     .lista-ofertas{
@@ -309,10 +345,15 @@ table, td, tr {
         width: 370px;
         border-style: solid;
         border-color: #e6c20f;
+       
     }
     table{
         width: 80%; 
         height: 300px; 
+        font-size: larger;
+    }
+    .sucursales{
+        margin-left: 150px;
     }
     /*termina-media-query-sucursales*/
 }

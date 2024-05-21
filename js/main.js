@@ -40,7 +40,6 @@ verificarFormulario.addEventListener("click", function(){
 })
 generarCaptcha.addEventListener("click", function(){
     generarPreguntaCaptcha();
-    
 })
 //termina captcha
 
