@@ -37,34 +37,25 @@
                         <td>sucursal</td>
                         <td>localidad</td>
                         <td>direccion</td>
-                        <td>horarios</td>
+                        <td>horarios</td>   
+                        <td>Borrar/Editar</td>
                     </tr>
                 </thead>
-                <tr>
-                    <td>BurgerQueen</td>
-                    <td>Tandil</td>
-                    <td>Avenida Colon 990</td>
-                    <td>11hrs a 24hrs</td>
-                </tr>
-                <tr>
-                    <td>BurgerQueen</td>
-                    <td>Las Flores</td>
-                    <td>Dorrego 965</td>
-                    <td>11hrs a 24hrs</td>
-                </tr>
-                <tr>
-                    <td>BurgerQueen</td>
-                    <td>Olavarria</td>
-                    <td>Maipu 230</td>
-                    <td>11hrs a 24hrs</td>
-                </tr>
-                <tr>
-                    <td>BurgerQueen</td>
-                    <td>Azul</td>
-                    <td>General Paz 845</td>
-                    <td>11hrs a 24hrs</td>  
-                </tr>
+                <tbody id="lista-sucursales">
+                </tbody>
             </table>
+            <div id="formsucursales">
+                <form class="pform">
+                    <p>Sucursal: <input type="text" name="sucursal" id="formsucursal" required></p>
+                    <p>Localidad: <input type="text" name="localidad" id="formlocalidad" required></p>
+                    <p>Direccion: <input type="text" name="direccion" id="formdireccion" required></p>
+                    <p>Horario: <input type="text" name="horario" id="formhorario" required></p>
+                    
+                </form>
+            </div>
+            <button type="button" class="botonform" id="btnAgregarForm" value="agregar">Agregar</button>
+            <p id="mensaje"></p>
+            
         </section>
         <section>
             <div class="mapasabajo">
@@ -75,6 +66,7 @@
             </div>
         </section>
     </main>
+    <script src="../js/table.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

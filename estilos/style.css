@@ -154,14 +154,14 @@ a{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 50px;
 }
 form {
     display: flex;
     flex-direction: column;
 }
-#botonform {
+.botonform {
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -171,7 +171,7 @@ form {
     font-size: 16px;
 }
 
-#botonform:hover {
+.botonform:hover {
     background-color: #0056b3;
 }
 .captcha {
@@ -212,21 +212,29 @@ textarea {
 
 /*comienza-html-sucursales*/
 .map{
-    height: 170px;
-    width: 170px;
+    height: 150px;
+    width: 150px;
+    border: 2px;
+    margin: 10px;
     border-style: solid;
     border-color: #e6c20f;
 }
 /*tabla*/
 .sucursales {
     color: #e4a14a;
-    padding: 10px;
-    margin: 20px;
-    content: 0px;
-    flex-wrap: wrap;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    display: block;
     background-color: black;
 }
-
+.sucursales th, .sucursales td {
+    padding: 8px;
+    border: 1px solid #e6c20f;
+    text-align: center;
+    word-wrap: break-word;
+}
 thead {
     color: yellow;
     text-transform: uppercase;
@@ -236,16 +244,65 @@ table, td, tr {
     border-collapse: collapse;
 }/*tabla*/
 .mapasarriba, .mapasabajo{
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #map2arriba, #map2abajo{
-    margin-left: 45px;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+
+/*formulario de surursales para rest*/
+#formsucursales {
+    background-color: #e4a14a;
+    color: black;
+}
+#mensaje{
+    background-color: #e4a14a;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+
+}
+.pform p{
+    margin: 5px 0;
+}
+.botonform {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #1c6ef4;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.styled-button {
+    padding: 8px 12px;
+    margin: 4px;
+    border: none;
+    background-color: #e6a91c;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.styled-button:hover {
+    background-color: #63e527;
+}
+
+.styled-button:active {
+    transform: scale(0.98);
 }
 /*termina-html-sucursales*/
 
-@media only screen and (min-width: 769px) {
+
+
+
+
+
+@media only screen and (min-width: 768px) {
    /* media query de la barra de navegacion*/
     .abrir-menu {
         display: none;
@@ -282,7 +339,7 @@ table, td, tr {
    
     /*comienza media query del form*/
    .container{
-    height: 600px;
+    height: 650px;
     width: 700px;
     font-size: x-large;
    }
@@ -341,19 +398,25 @@ table, td, tr {
   
     /*comienza-media-query-sucursales*/
   .map{
-        height: 370px;
-        width: 370px;
+        height: 270px;
+        width: 270px;
         border-style: solid;
         border-color: #e6c20f;
        
     }
-    table{
-        width: 80%; 
-        height: 300px; 
-        font-size: larger;
+    .mapasarriba, .mapasabajo {
+        justify-content: center;
     }
-    .sucursales{
-        margin-left: 150px;
+    #map2arriba, #map2abajo {
+        margin-left: 45px;
+        margin-top: 0;
+    }
+    .sucursales {
+        font-size: 16px;
+        display: table; /* Cambia el display a table para pantallas más grandes */
+    }
+    .sucursales th, .sucursales td {
+        padding: 12px;
     }
     /*termina-media-query-sucursales*/
 }

@@ -1,10 +1,18 @@
+"use strict"
 
 //menu hamburguesa
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
+//captcha
 const generarCaptcha = document.querySelector("#btn-generar-captcha");
 const verificarFormulario = document.querySelector("#botonform");
+
+
+
+
+
+//comienza menu hamburguesa
 abrir.addEventListener("click", function(){
     nav.classList.add("visible");
 })
@@ -13,8 +21,7 @@ cerrar.addEventListener("click", function(){
 })
 //aca termina menu hamgurguesa
 
-//captcha
-
+//comienza captcha
 function generarPreguntaCaptcha() {
     const num1 = Math.floor(Math.random() * 10);
     const num2 = Math.floor(Math.random() * 10);
@@ -42,4 +49,5 @@ generarCaptcha.addEventListener("click", function(){
     generarPreguntaCaptcha();
 })
 //termina captcha
+
 
